@@ -1,3 +1,24 @@
+Workers can anonymously snark about their bosses
+TODO:
+-Look up Horizon http://horizon.io/docs/getting-started/   (backend)
+-anonymous (no account creation, or information regarding person submitting information)
+-User inputs information, backend will create actual checklist?
+-Snarky feedback  viewable to the public.
+-Inputted information :Boss Name, department, feedback/description
+-(optional) can do Browser Chrome notification
+-(optional) Passcode for all employees (same passcode, to combat spam)
+-Employees can comment on post
+-Web app is a local only web app (not meant to deploy on the internet)
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
 CPSC 473 - Web Front-End Engineering for Internet Applications
 Project 1 - Spring 2017
 Section 2
@@ -8,16 +29,9 @@ Demos April 5
 Source code and documentation due April 12
 Use client-side JavaScript, AJAX, and Horizon  to build one of the applications listed below.  You may use any available third-party Web Service APIs, libraries, or modules, provided that you comply with the terms of their licenses.
 Projects
-Build a site where...
-Parents can share embarrassing baby pictures with their children’s potential dates
-Neighbors can shame other neighbors for their pets’ and / or children’s bad behavior
-Workers can anonymously snark about their bosses
-Local bands can solicit feedback on recent shows
-Politicians can exchange tips about avoiding their constituents
-Fans can share stories of encounters with their favorite celebrities.
-Students can vote on how likely it is that a given topic will show up on the next test
-Visitors can create their own “which character are you?” quizzes
-Contactees can alert each other of their most recent UFO sightings
+
+
+
 Functionality
 Note that project descriptions are very brief and deliberately underspecified.  This is your chance for creativity.  Begin with a set of possible features, plan according to the available time, and build something interesting.  Think of the project not as a finished application, but as a proof-of-concept, prototype, or Minimum Viable Product.
 Working with other teams
