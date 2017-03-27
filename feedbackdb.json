@@ -1,0 +1,32 @@
+{
+  "feedbackData": [
+    {
+      "id": "1",
+      "bossName": "test",
+      "deptName": "deptTest",
+      "ratings": "8",
+      "feedback": "This is a demo feedback"
+    },
+    {
+      "id": "2",
+      "bossName": "Jack",
+      "deptName": "Computer Science",
+      "ratings": "7",
+      "feedback": "Very bad"
+    },
+    {
+      "id": "3",
+      "bossName": "Jill",
+      "deptName": "Social Sciences",
+      "ratings": "4",
+      "feedback": "Demo comment"
+    },
+    {
+      "bossName": "Mill",
+      "deptName": "Sciences",
+      "ratings": "4",
+      "feedback": "Demo feedback comment",
+      "id": "SkP5Q1Ihl"
+    }
+  ]
+}
