@@ -14,9 +14,9 @@
             throw new Error('Could not find element with selector: ' + selector);
         }
 
-        var slider = document.getElementById('strengthLevel');
-        var sliderOutput = document.getElementById('strengthOutput');
-        var sliderLabel = document.getElementById('strengthLabel');
+        var slider = document.getElementById('ratingLevel');
+        var sliderOutput = document.getElementById('ratingOutput');
+        var sliderLabel = document.getElementById('ratingSlider');
 
         // set initial color due to default value being 30
         sliderOutput.style.color = 'orange';
