@@ -2,12 +2,16 @@
     'use strict';
     var App = window.App || {};
 
-    function DataStore() {
-        //console.log('running the DataStore function');
-        this.data = {};
+    function DataStore(url) {
+        if (!url) {
+            throw new Error('No remote URL supplied.');
+        }
+        this.serverUrl = url;
     }
     DataStore.prototype.add = function(key, val) {
-        this.data[key] = val;
+        $.post(this.serverUrl, val, function(serverResponse) {
+            console.log(serverResponse);
+        });
     };
 
     DataStore.prototype.get = function(key) {

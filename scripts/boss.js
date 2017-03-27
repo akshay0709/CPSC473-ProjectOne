@@ -13,11 +13,6 @@
         this.db.add(order.bossidName, order);
     };
 
-    // Boss.prototype.deliverOrder = function(bossID) {
-    //     console.log('Delivering order for ' + bossID);
-    //     this.db.remove(bossID);
-    // };
-
     Boss.prototype.printFeedback = function() {
         var bossIDArray = Object.keys(this.db.getAll());
         console.log('Boss #' + this.BossId + ' has pending orders:');
@@ -35,8 +30,6 @@
 
 
     };
-
-
 
     App.Boss = Boss;
     window.App = App;
