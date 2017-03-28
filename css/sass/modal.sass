@@ -24,7 +24,7 @@ $yellow: #F8D902
 .modals
   font-family: "Maven Pro"
   transform: translate(0, -100px)
-  transition: all 500ms cubic-bezier(0.25, 0.35, 0, 1.74)
+  transition: all 600ms cubic-bezier(0.25, 0.35, 0, 1.74)
   max-width: 700px
   background: white
   padding: 20px
@@ -110,9 +110,19 @@ $yellow: #F8D902
 
       &[type="submit"]
         background: $yellow
-        margin-left: 10px
+        width: 25%
+        text-align: center
         text-transform: uppercase
         cursor: pointer
+        transition: all 0.2s ease-in
+
+        &:hover
+          box-shadow: 0 0 0 2px $yellow inset, 0 0 0 4px black inset
+          letter-spacing: 1.3px
+          font-weight: 700
+
+        &:active
+          transform: scale(0.9)
 
 @media (max-width: 820px)
   .modals
@@ -120,8 +130,17 @@ $yellow: #F8D902
 
     .close-btn
       right: 0
+      font-size: 25px
 
-@media (max-width: 680px)
+@media (max-width: 720px)
+  .modals
+    margin: 10px
+
+    .close-btn
+      right: 0
+      font-size: 25px
+
+@media (max-width: 718px)
   .graphic
     display: none
 
@@ -132,8 +151,13 @@ $yellow: #F8D902
     form
       flex-direction: column
 
+      textarea
+        margin-bottom: 0 
+
       input[type="submit"]
         margin: 0
+        width: 50%
 
       input[type="text"]
+        width: 100%
         margin-bottom: 5px
