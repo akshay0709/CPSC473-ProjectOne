@@ -18,7 +18,9 @@
     };
 
     DataStore.prototype.getAll = function() {
-        return this.data;
+        $.get(this.serverUrl, function(serverResponse){
+          console.log(serverResponse);
+        });
     };
 
     DataStore.prototype.remove = function(key) {
