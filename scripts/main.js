@@ -7,7 +7,7 @@
     var DataStore = App.DataStore;
     var FormHandler = App.FormHandler;
     var DataStore = new DataStore(SERVER_URL)
-    var myBoss = new Boss('ncc-1701', DataStore);
+    var myBoss = new Boss(DataStore);
     window.myBoss = myBoss;
     var formHandler = new FormHandler(FORM_SELECTOR);
     formHandler.addSubmitHandler(myBoss.createFeedback.bind(myBoss));

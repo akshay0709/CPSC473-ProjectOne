@@ -2,13 +2,12 @@
     'use strict';
     var App = window.App || {};
 
-    function Boss(BossId, db) {
-        this.BossId = BossId;
+    function Boss(db) {
+        //this.BossId = BossId;
         this.db = db;
     }
 
     Boss.prototype.createFeedback = function(order) {
-        console.log('Adding order for ' + order.bossidName);
         this.db.add(order.bossidName, order);
     };
 
