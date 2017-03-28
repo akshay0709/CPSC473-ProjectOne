@@ -1,31 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rate My Boss</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto+Slab" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8" />
-    <title>RateYourBoss</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-    <style>
-        form :focus:required:invalid {
-            border-color: #a94442;
-        }
-    </style>
-</head>
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
-<body class="container">
-    <header>
-        <h1>Rate Your Boss</h1>
-    </header>
-    <section>
-        <!-- The Form box goes here -->
-    </section>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="" class="modalactivator1">My Boss Rating</a></li>
+        <li><a href="" class="modalactivator">Rate My Boss <i class="ion-chevron-right"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="overlays">
+      <div class="modals">
+        <div class="close-btn"><i class="ion-close"></i></div>
+        <div class="text-box">
+          <p class="lead">Post a review about the Boss..</p>
+          <p>Rate my boss is a platform where a constructive feedback and independent reviews for bosses and Managers!</p>
+        </div>
+        <div class="graphic"></div>
+        <form>
+          <input type="text" placeholder="Boss Name">
+          <input type="text" placeholder="Department Name">
+          <select name="sources" id="sources" class="custom-select sources" placeholder="Rating">
+            <option value="1">1 - Very bad</option>
+            <option value="2">2 - Bad</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+          <textarea cols="20" rows="4" placeholder="Boss Name"></textarea>
+          <br/>
+          <input type="submit">
+        </form>
 
-    <section>
-        <!-- Submitted information goes here for user to view -->
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
-
-    <script src="scripts/main.js" charset="utf-8"></script>
-</body>
-
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/select.js"></script>
+  </body>
 </html>
