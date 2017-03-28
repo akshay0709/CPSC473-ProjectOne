@@ -142,7 +142,8 @@
 
 @media (max-width: 718px) {
   .custom-select-trigger {
-    width: 100%; } }
+    width: 100%;
+    margin-bottom: 10px; } }
 .overlays {
   position: absolute;
   background: rgba(248, 217, 2, 0.9);
@@ -273,7 +274,6 @@
       margin: 0;
       width: 50%; }
     .modals form input[type="text"] {
-      width: 100%;
-      margin-bottom: 5px; } }
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
