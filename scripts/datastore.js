@@ -10,7 +10,6 @@
     }
     DataStore.prototype.add = function(key, val) {
         $.post(this.serverUrl, val, function(serverResponse) {
-            console.log(serverResponse);
         });
     };
 

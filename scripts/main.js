@@ -11,5 +11,4 @@
     window.myBoss = myBoss;
     var formHandler = new FormHandler(FORM_SELECTOR);
     formHandler.addSubmitHandler(myBoss.createFeedback.bind(myBoss));
-    console.log(formHandler);
 })(window);
