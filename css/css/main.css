@@ -144,6 +144,9 @@
   .custom-select-trigger {
     width: 100%;
     margin-bottom: 10px; } }
+@media(max-width: 320px) {
+  .custom-select-trigger {
+    line-height: 45px; } }
 .overlays {
   position: absolute;
   background: rgba(248, 217, 2, 0.9);
@@ -275,5 +278,37 @@
       width: 50%; }
     .modals form input[type="text"] {
       width: 100%; } }
+@media (max-width: 414px) {
+  .modals .close-btn {
+    top: 0; }
+  .modals .text-box .lead {
+    font-size: 20px;
+    line-height: 1.3px; }
+  .modals .text-box p {
+    font-size: 14px; } }
+@media (max-width: 360px) {
+  .modals .close-btn {
+    top: 0; }
+  .modals .text-box .lead {
+    font-size: 18px;
+    line-height: 1.3px; }
+  .modals .text-box p {
+    font-size: 12px; }
+  .modals form {
+    margin: 20px -20px -20px; } }
+@media (max-width: 320px) {
+  .modals .close-btn {
+    top: 0; }
+  .modals .text-box .lead {
+    font-size: 15px;
+    line-height: 1px; }
+  .modals .text-box p {
+    font-size: 12px; }
+  .modals form {
+    margin: 15px -20px -20px; }
+    .modals form input {
+      height: 45px; }
+    .modals form textarea {
+      height: 100px; } }
 
 /*# sourceMappingURL=main.css.map */

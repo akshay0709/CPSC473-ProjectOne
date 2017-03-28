@@ -75,8 +75,6 @@ $yellow: #F8D902
     display: flex
     flex-wrap: wrap
 
-
-
     textarea
       width: 100%
       height: 140px
@@ -160,3 +158,56 @@ $yellow: #F8D902
 
       input[type="text"]
         width: 100%
+
+@media (max-width: 414px)
+  .modals
+
+    .close-btn
+      top: 0
+
+    .text-box
+      .lead
+        font-size: 20px
+        line-height: 1.3px
+
+      p
+        font-size: 14px
+
+
+@media (max-width: 360px)
+  .modals
+    .close-btn
+      top: 0
+
+    .text-box
+      .lead
+        font-size: 18px
+        line-height: 1.3px
+
+      p
+        font-size: 12px
+
+    form
+      margin: 20px -20px -20px
+
+@media (max-width: 320px)
+  .modals
+    .close-btn
+      top: 0
+
+    .text-box
+      .lead
+        font-size: 15px
+        line-height: 1px
+
+      p
+        font-size: 12px
+
+    form
+      margin: 15px -20px -20px
+
+      input
+        height: 45px
+
+      textarea
+        height: 100px
