@@ -1,14 +1,18 @@
 (function(window) {
     'use strict';
     var FORM_SELECTOR = '[boss-data-feedback="form"]';
+    var COMMENT_SECTION_SELECTOR = '[data-boss-feedback="comments"]';
     var SERVER_URL = '  http://localhost:3002/feedbackData';
     var App = window.App;
     var Boss = App.Boss;
     var DataStore = App.DataStore;
     var FormHandler = App.FormHandler;
-    var DataStore = new DataStore(SERVER_URL)
+    var BossList = App.BossList;
+    var DataStore = new DataStore(SERVER_URL);
     var myBoss = new Boss(DataStore);
     window.myBoss = myBoss;
     var formHandler = new FormHandler(FORM_SELECTOR);
+    var bossList = new BossList(COMMENT_SECTION_SELECTOR);
     formHandler.addSubmitHandler(myBoss.createFeedback.bind(myBoss));
+    bossList.getAllComments(DataStore);
 })(window);
