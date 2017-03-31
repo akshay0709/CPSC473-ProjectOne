@@ -11,7 +11,14 @@
         }
     </style>
 </head>
+<script>
+    function refresh() {
 
+        setTimeout(function() {
+            location.reload()
+        }, 100);
+    }
+</script>
 <body class="container">
     <header>
         <h1>Rate Your Boss</h1>
@@ -43,7 +50,7 @@
                         <input name="rating" id="ratingLevel" type="range" min="1" max="10" value="8">
                         <output for="ratingLevel" id="ratingOutput">8</output>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" onclick="refresh()" class="btn btn-default">Submit</button>
                     <button type="reset" class="btn btn-default">Reset</button>
                 </form>
             </div>
@@ -51,19 +58,17 @@
 
     </section>
 
-    <section>
+
+    <section data-boss-feedback="comments" id="comments">
+      <!-- <div>
+          <h5>Boss Name - Boss Department - Rating : 8</h5>
+          Feedback
+      </div> -->
         <!-- Submitted information goes here for user to view -->
-        <div class="panel panel-default">
-        <div class="panel-body">
-            <h4>Boss Ratings:</h4>
-            <div boss-data-feedback="bosslist">
-            </div>
-        </div>
-    </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
-
     <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/bosslist.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>
     <script src="scripts/boss.js" charset="utf-8"></script>
     <script src="scripts/main.js" charset="utf-8"></script>
