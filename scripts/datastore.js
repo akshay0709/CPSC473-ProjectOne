@@ -17,9 +17,9 @@
         return this.data[key];
     };
 
-    DataStore.prototype.getAll = function() {
+    DataStore.prototype.getAll = function(callback) {
         $.get(this.serverUrl, function(serverResponse){
-          console.log(serverResponse);
+          callback(serverResponse);
         });
     };
 

@@ -1,46 +1,6 @@
 {
   "feedbackData": [
     {
-      "id": "1",
-      "bossName": "test",
-      "deptName": "deptTest",
-      "ratings": "8",
-      "bossIdName": "testid",
-      "feedback": "This is a demo feedback"
-    },
-    {
-      "id": "2",
-      "bossName": "Jack",
-      "deptName": "Computer Science",
-      "ratings": "7",
-      "bossIdName": "Jackid",
-      "feedback": "Very bad"
-    },
-    {
-      "bossName": "Mill",
-      "deptName": "Sciences",
-      "ratings": "4",
-      "bossIdName": "Millid",
-      "feedback": "Demo feedback comment",
-      "id": "SkP5Q1Ihl"
-    },
-    {
-      "bossName": "Jack",
-      "deptName": "Sciences",
-      "ratings": "4",
-      "bossIdName": "Jackid2",
-      "feedback": "Demo feedback comment",
-      "id": "BJ_Va1Ihl"
-    },
-    {
-      "bossName": "Jack",
-      "deptName": "Sciences",
-      "ratings": "4",
-      "bossIdName": "Jackid3",
-      "feedback": "Ddsdsggjghdfgemo feedback comment",
-      "id": "rkeBTy82g"
-    },
-    {
       "bossName": "Akshay Pawar",
       "bossDepartment": "CS",
       "bossidName": "ap",
@@ -56,11 +16,39 @@
       "id": "BkhZsNPhl"
     },
     {
-      "bossName": "John Smith",
+      "bossName": "Tron ",
       "bossDepartment": "Math",
-      "bossFeedback": "Okay Guy.",
-      "rating": "9",
-      "id": "ByelQHPne"
+      "bossFeedback": "Okay Person",
+      "rating": "7",
+      "id": "Hk2BI81ae"
+    },
+    {
+      "bossName": "Edwin Smith",
+      "bossDepartment": "Economics",
+      "bossFeedback": "Horrible",
+      "rating": "1",
+      "id": "B1VUw8Jpl"
+    },
+    {
+      "bossName": "Thomas Edwards",
+      "bossDepartment": "HR",
+      "bossFeedback": "Not good at all",
+      "rating": "2",
+      "id": "B1VqvL16g"
+    },
+    {
+      "bossName": "ds",
+      "bossDepartment": "dafds",
+      "bossFeedback": "sdfad",
+      "rating": "8",
+      "id": "rybiPUkTl"
+    },
+    {
+      "bossName": "Donald Trump",
+      "bossDepartment": "President",
+      "bossFeedback": "Horrible",
+      "rating": "1",
+      "id": "SJC8dU1Te"
     }
   ]
 }
