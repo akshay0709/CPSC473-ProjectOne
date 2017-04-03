@@ -17,7 +17,7 @@
               allComments = s;
               allComments.forEach(function(item){
                 //console.log("this is item " + item.id);
-                $("#comments").append("<div><h5>" + item.bossName + " - " + item.bossDepartment + " - Rating:" + item.rating + "</h5>" + item.bossFeedback + "</div>");
+                $("#comments").prepend("<div><h5>" + item.bossName + " - " + item.bossDepartment + " - Rating:" + item.rating + "</h5>" + item.bossFeedback + "</div>");
               });
           });
     };
