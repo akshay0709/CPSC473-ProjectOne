@@ -1,0 +1,136 @@
+/*
+ * Header Styles
+ */
+.header-container{
+	padding-left: 0;
+
+	@media screen and (max-width:990px){
+		padding-left: 15px;
+	}
+}
+.site-header{
+	padding-top: 90px;
+	@media screen and (max-width:990px){
+		padding-bottom: 30px;
+	}
+}
+#branding{
+	@include clearfix;
+	margin-bottom: 90px;
+
+	@media screen and (max-width:990px){
+		margin-bottom: 30px;
+		float: left;
+	}
+
+	.logo{
+		float: left;
+		margin-right: 10px;
+	}
+	.logo-text{
+		display: table;
+
+		.site-title{
+			@include em(13);
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		.site-description{
+			@include em(12);
+		}
+	}
+}
+.menu-toggle{
+	background: none;
+	border: none;
+	color: $body-color;
+	display: none;
+	float: right;
+	outline: none;
+	@include em(24);
+
+	@media screen and (max-width: 990px){
+		display: block;
+	}
+}
+.collapsible{
+	clear: both;
+	@media screen and (min-width:991px){ display: block!important }
+	@media screen and (max-width:990px){ display: none }
+}
+.main-navigation{
+	margin-bottom: 90px;
+	@media screen and (max-width:990px){
+		margin-bottom: 30px;
+		clear: both;
+	}
+
+	.menu{
+		list-style: none;
+		border-top: 1px solid #2f2a2c;
+	}
+	.menu-item{
+		border-bottom: 1px solid #2f2a2c;
+
+		a{
+			font-weight: 700;
+			display: block;
+			text-transform: uppercase;
+		}
+
+		&.current-menu-item {
+			[class^="icon-"]{
+				background-position-x:-20px; 
+			}
+			a{color: $accent-color}
+		}
+
+	}
+	a{
+		color: inherit;
+		display: block;
+		padding: 10px 0;
+
+		&:hover{
+			color: $accent-color;
+			[class^="icon-"]{
+				background-position-x:-20px; 
+			}
+		}
+	}
+}
+
+[class^="icon-"]{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background: url(images/nav-icon.png) no-repeat;
+	background-position: 0 0;
+}
+
+.icon-homepage{ background-position-y: 0 }
+.icon-about{ background-position-y: -20px }
+.icon-recipe{ background-position-y: -40px }
+.icon-contact{ background-position-y: -60px }
+
+.social-links{
+	a{
+		display: inline-block;
+		width: 34px;
+		height: 34px;
+		border: 1px solid #2f2a2c;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 2.3;
+		color: $body-color;
+		transition: .3s ease;
+
+		&:hover{
+			color: $accent-color;
+			border-color: $accent-color;
+		}
+
+	}
+}

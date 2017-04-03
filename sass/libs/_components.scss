@@ -1,0 +1,16 @@
+/*
+ * Reusable Components Style
+ */
+
+.button{
+	border: none;
+	background: #f5ca6e;
+	background: linear-gradient(180deg,#fff0ac, #f5ca6e);
+	color: #987d3f;
+	padding: 10px;
+
+	&:hover{
+		background: #fff0ac;
+	background: linear-gradient(0deg,#fff0ac, #f5ca6e);
+	}
+}
