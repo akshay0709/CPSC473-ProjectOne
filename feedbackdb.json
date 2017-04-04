@@ -9,7 +9,7 @@
       "id": "BJDRO7vhx"
     },
     {
-      "bossName": "Tayseer Eudoni",
+      "bossName": "Tayseer Edouni",
       "bossDepartment": "CS",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "8",
@@ -58,11 +58,11 @@
       "id": "H1bTIOx6x"
     },
     {
-      "bossName": "Test Name",
-      "bossDepartment": "Software",
-      "bossFeedback": "Cool Boss",
-      "rating": "3",
-      "id": "HyI23_xae"
+      "bossName": "Wolverine",
+      "bossDepartment": "Earth",
+      "bossFeedback": "demo feedback",
+      "rating": "2",
+      "id": "ByNDoYl6e"
     }
   ]
 }

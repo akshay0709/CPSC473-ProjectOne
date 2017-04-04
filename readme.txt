@@ -1,16 +1,9 @@
 Workers can anonymously snark about their bosses
 TODO:
--Look up Horizon http://horizon.io/docs/getting-started/   (backend)
--anonymous (no account creation, or information regarding person submitting information)
--User inputs information, backend will create actual checklist?
--Snarky feedback  viewable to the public.
--Inputted information :Boss Name, department, feedback/description
--(optional) can do Browser Chrome notification
--(optional) Passcode for all employees (same passcode, to combat spam)
--Employees can comment on post
--Web app is a local only web app (not meant to deploy on the internet)
-
-
+-Implement comments for Feedback cards
+-Implement Search Functionality
+-Implement About page
+-Implement Contact page
 
 
 
