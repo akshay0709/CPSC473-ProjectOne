@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+		<title>Sugar&Spice</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		<div id="site-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 header-container">
+						<header class="site-header">
+							<div id="branding">
+								<img src="images/logo.png" alt="" class="logo">
+								<div class="logo-text">
+									<h1 class="site-title"><a href="index.html">Sugar & Spice</a></h1>
+									<smal class="site-description">Office Gossips</smal>
+								</div>
+							</div>
+							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+
+							<div class="collapsible">
+								<!-- Default snippet for navigation -->
+								<div class="main-navigation">
+									<ul class="menu">
+										<li class="menu-item current-menu-item"><a href="index.html"><span class="icon-homepage"></span>Home</a></li>
+										<li class="menu-item"><a href="index.html"><span class="icon-about"></span>About Us</a></li>
+										<li class="menu-item"><a href="index.html"><span class="icon-recipe"></span>Reviews</a></li>
+										<li class="menu-item"><a href="contact.html"><span class="icon-contact"></span>Contact</a></li>
+									</ul> <!-- .menu -->
+								</div> <!-- .main-navigation -->
+
+						<!--		<div class="social-links">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</div> -->
+							</div>
+
+						</header>
+					</div>
+					<div class="col-md-10">
+						<main class="main-content">
+							<div class="home-blocks">
+								<div class="hero large-block bg-orange">
+									<img src="images/itoffice.png" alt="" class="bg-image">
+									<div class="inner-content">
+										<h1 class="section-title">Workers can anonymously snark about their bosses</h1>
+										<small class="section-subtitle">Give ratings to your bosses and feedback</small>
+										<ul>
+											<li>Improvement </li>
+											<li>High Reliability</li>
+											<li>Confidentiality </li>
+											<li> Discussions </li>
+										</ul>
+										<a href="#" class="more-link"></a>
+									</div>
+								</div>
+								<!--
+								<div class="small-block bg-blue">
+									<img src="dummy/lol.png" alt="" class="bg-image">
+									<h2 class="section-title">News</h2>
+									<a href="#" class="more-link"></a>
+								</div>
+								<div class="small-block bg-green">
+									<img src="dummy/lala.png" alt="" class="bg-image">
+									<h2 class="section-title">Discussion Forums</h2>
+									<a href="#" class="more-link"></a>
+								</div> -->
+								<div class="small-block" data-bg-color="#272324">
+									<h2 class="section-title">Feedback Request</h2>
+									<p>Employees snark behind their bosses</p>
+									<form action="#" class="order-form">
+										<p>
+											<label for="#"> Boss name:</label>
+											<input type="text">
+										</p>
+										<p>
+											<label for="#">Department:</label>
+											<input type="text">
+										</p>
+										<p>
+											<label for="#">Comments:</label>
+											  <textarea textarea class="form-control" name="bossFeedback" id="bossfeedback"></textarea>
+											<!-- <input type="text"> -->
+										</p>
+										<div class="form-group">
+                        <label for="ratingLevel" id="ratingLabel">Boss Rating</label>
+                        <input name="rating" id="ratingLevel" type="range" min="1" max="10" value="8">
+                        <output for="ratingLevel" id="ratingOutput">8</output>
+                    </div>
+										<p class="text-right">
+											<input type="submit" value="Submit">
+											<input  type="reset" value = "Reset">
+										</p>
+									</form>
+								</div>
+
+								<div class="small-block" data-bg-color="#1d191a">
+									<h2 class="section-title">Reviews</h2>
+									<ul class="news">
+										<li>
+											<span class="date">Just Now </span>
+											<h2 class="entry-title"><a href="#">Consectetur adipisicing eiusmod incididunt.</a></h2>
+										</li>
+										<li>
+											<span class="date">Today</span>
+											<h2 class="entry-title"><a href="#">Consectetur adipisicing eiusmod incididunt.</a></h2>
+										</li>
+										<li>
+											<span class="date">Today </span>
+											<h2 class="entry-title"><a href="#">Consectetur adipisicing eiusmod incididunt.</a></h2>
+										</li>
+										<li>
+											<span class="date">Few Days Ago</span>
+											<h2 class="entry-title"><a href="#">Consectetur adipisicing eiusmod incididunt.</a></h2>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</main>
+
+						<footer class="site-footer">
+						<!--	<div class="newsletter">
+								<form action="#">
+									<label for="#">Join	our newsletter to receive news</label>
+									<div class="control">
+										<input type="text">
+										<button><img src="images/icon-envelope.png" alt=""></button>
+									</div>
+								</form>
+							</div> -->
+							<div class="colophon">Copyright 2017 Spice & Sugar. Designed by Pragya. All rights reserved.</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/boss.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
+
+	</body>
+
+</html>
