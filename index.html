@@ -1,96 +1,137 @@
-<!doctype html>
-<html>
-<!-- Test -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<title>GOSSIPMONGER</title>
 
-    <title>GossipMonger</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Loading third party fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700|" rel="stylesheet" type="text/css">
-    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
 
-    <!-- Loading main css file -->
-    <link rel="stylesheet" href="style.css">
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
 
-    <!--[if lt IE 9]>
-<script src="js/ie-support/html5.js"></script>
-<script src="js/ie-support/respond.js"></script>
-<![endif]-->
-</head>
-
-<body class="container">
-    <div class="site-title">
-        <a href="index.html"><h1>GossipMonger</h1></a>
-    </div>
-    <h2 class="site-description">Sugar & Spice</h2>
-    <section>
-        <!-- The Form box goes here -->
-        <!--Boss Name  -->
-        <!--Department  -->
-        <!--Slider  -->
-        <!--Description/Textfield  -->
+	</head>
 
 
-            <main class="main-content">
-                <div class="home-blocks">
-                    <div class="hero large-block bg-orange">
-                        <img alt="" class="bg-image">
-                        <div class="inner-content">
-                            <a href="#" class="more-link"></a>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <h2 class="section-title">Rate Your Boss</h2>
-                                    <form boss-data-feedback="form" onsubmit="location.reload()" class="order-form">
-                                        <div class="form-group">
-                                            <label for="BossName">Boss Name</label>
-                                            <input class="form-control" name="bossName" id="bossName" autofocus required pattern="[a-zA-Z\s]+">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Department">Department</label>
-                                            <input class="form-control" name="bossDepartment" id="department" autofocus required pattern="[a-zA-Z\s]+">
-                                        </div>
+	<body>
+		<div id="site-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 header-container">
+						<header class="site-header">
+							<div id="branding">
+								<img src="images/logo.png" alt="" class="logo">
+								<div class="logo-text">
+									<h1 class="site-title"><a href="index.html">Sugar & Spice</a></h1>
+									<smal class="site-description">Office Gossips</smal>
+								</div>
+							</div>
+							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 
-                                        <label for="Feedback">Boss Feedback</label>
-                                        <textarea textarea class="form-control" name="bossFeedback" id="bossfeedback"></textarea>
+							<div class="collapsible">
+								<!-- Default snippet for navigation -->
+								<div class="main-navigation">
+									<ul class="menu">
+										<li class="menu-item current-menu-item"><a href="index.html"><span class="icon-homepage"></span>Home</a></li>
+										<li class="menu-item"><a href="about.html"><span class="icon-about"></span>About Us</a></li>
+										<li class="menu-item"><a href="reviews.html"><span class="icon-recipe"></span>Reviews</a></li>
+										<li class="menu-item"><a href="contact.html"><span class="icon-contact"></span>Contact</a></li>
+									</ul> <!-- .menu -->
+								</div> <!-- .main-navigation -->
 
-                                        <div class="form-group">
-                                            <label for="ratingLevel" id="ratingLabel">Boss Rating</label>
-                                            <input name="rating" id="ratingLevel" type="range" min="1" max="10" value="8">
-                                            <output for="ratingLevel" id="ratingOutput">8</output>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit</button>
-                                        <button type="reset" class="btn btn-default">Reset</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-    </section>
+								<div class="social-links">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-pinterest"></i></a>
+								</div>
+							</div>
 
-<br>
-    <div class="news" data-bg-color="#1d191a">
-    <center>  <h2 >Reviews</h2> </center>
-      <ul class="news">
-        <li data-boss-feedback="comments" id="comments">
-            <!-- <div>
-          <h5>Boss Name - Boss Department - Rating : 8</h5>
-          Feedback
-      </div> -->
-            <!-- Submitted information goes here for user to view -->
-        </li>
-      </ul>
-    </div>
+						</header>
+					</div>
+					<div class="col-md-10">
+						<main class="main-content">
+								<div class="home-blocks">
+										<div class="hero large-block bg-orange">
+												<img alt="" class="bg-image">
+												<div class="inner-content">
+														<a href="#" class="more-link"></a>
+														<div class="panel panel-default">
+																<div class="panel-body">
+																		<h2 class="section-title">Rate Your Boss</h2>
+																		<form boss-data-feedback="form" onsubmit="location.reload()" class="order-form">
+																				<div class="form-group">
+																						<label for="BossName">Boss Name</label>
+																						<input class="form-control" name="bossName" id="bossName" autofocus required pattern="[a-zA-Z\s]+">
+																				</div>
+																				<div class="form-group">
+																						<label for="Department">Department</label>
+																						<input class="form-control" name="bossDepartment" id="department" autofocus required pattern="[a-zA-Z\s]+">
+																				</div>
 
-    <footer class="site-footer">
-      <div class="colophon">Copyright 2017 Spice & Sugar. Designed by CODEMONGER (CPSC-473-Project Team6). All rights reserved.</div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+																				<label for="Feedback">Boss Feedback</label>
+																				<textarea textarea class="form-control" name="bossFeedback" id="bossfeedback"></textarea>
+
+																				<div class="form-group">
+																						<label for="ratingLevel" id="ratingLabel">Boss Rating</label>
+																						<input name="rating" id="ratingLevel" type="range" min="1" max="10" value="8">
+																						<output for="ratingLevel" id="ratingOutput">8</output>
+																				</div>
+																				<button type="submit" class="btn btn-default">Submit</button>
+																				<button type="reset" class="btn btn-default">Reset</button>
+																		</form>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</main>
+
+						<br>
+						    <div class="news" data-bg-color="#1d191a">
+						    <center>  <h2 >Reviews</h2> </center>
+						      <ul class="news">
+						        <li data-boss-feedback="comments" id="comments">
+						            <!-- <div>
+						          <h5>Boss Name - Boss Department - Rating : 8</h5>
+						          Feedback
+						      </div> -->
+						            <!-- Submitted information goes here for user to view -->
+						        </li>
+						      </ul>
+						    </div>
+
+						<footer class="site-footer">
+						<!--	<div class="newsletter">
+								<form action="#">
+									<label for="#">Join	our newsletter to receive news</label>
+									<div class="control">
+										<input type="text">
+										<button><img src="images/icon-envelope.png" alt=""></button>
+									</div>
+								</form>
+							</div> -->
+							<div class="colophon">Copyright 2017 GOSSIPMONGER. Designed by CODEMONGER. All rights reserved.</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
     <script src="scripts/formhandler.js" charset="utf-8"></script>
     <script src="scripts/bosslist.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>
@@ -98,6 +139,6 @@
     <script src="scripts/main.js" charset="utf-8"></script>
 
 
+	</body>
 
-</body>
 </html>
