@@ -9,22 +9,25 @@
         this.serverUrl = url;
     }
     DataStore.prototype.add = function(key, val) {
-        $.post(this.serverUrl, val, function(serverResponse) {
+        $.post(this.serverUrl, val, function(serverResponse) {});
+    };
+
+    DataStore.prototype.get = function(key, cb) {
+        $.get(this.serverUrl + '/' + key, function(serverResponse) {
+            console.log(serverResponse);
+            cb(serverResponse);
         });
     };
-
-    DataStore.prototype.get = function(key) {
-        return this.data[key];
-    };
-
     DataStore.prototype.getAll = function(callback) {
-        $.get(this.serverUrl, function(serverResponse){
-          callback(serverResponse);
+        $.get(this.serverUrl, function(serverResponse) {
+            callback(serverResponse);
         });
     };
 
-    DataStore.prototype.remove = function(key) {
-        delete this.data[key];
+    RemoteDataStore.prototype.remove = function(key) {
+        $.ajax(this.serverUrl + '/' + key, {
+            type: 'DELETE'
+        });
     };
 
     App.DataStore = DataStore;
