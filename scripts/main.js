@@ -24,7 +24,8 @@
         e.preventDefault();
         var b = document.getElementById('searchbartextinput').value;
         if (b === '') {
-            location.reload();
+            bossList.getAllComments(DataStore);
+
         } else {
             var remoteDS = new App.DataStore("http://localhost:3002/feedbackData");
             remoteDS.getFeedback(b, function() {});

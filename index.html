@@ -34,11 +34,11 @@
                 <form boss-data-feedback="form" onsubmit="location.reload()">
                     <div class="form-group">
                         <label for="BossName">Boss Name</label>
-                        <input class="form-control" name="bossName" id="bossName" placeholder="Please enter name of the boss." autofocus required pattern="[a-zA-Z\s]+">
+                        <input class="form-control" name="bossName" id="bossName" placeholder="Please enter name of the boss. [a-zA-Z]" autofocus required pattern="[a-zA-Z\s]+">
                     </div>
                     <div class="form-group">
                         <label for="Department">Department</label>
-                        <input class="form-control" name="bossDepartment" id="department" placeholder="Please enter department of the boss." autofocus required pattern="[a-zA-Z\s]+">
+                        <input class="form-control" name="bossDepartment" id="department" placeholder="Please enter department of the boss. [a-zA-Z]" autofocus required pattern="[a-zA-Z\s]+">
                     </div>
 
                     <label for="Feedback">Boss Feedback</label>
@@ -58,11 +58,11 @@
     </section>
 
     <div class="form-group">
-      <form id="searchBossName" >
-          <input type="form-control" class="searchbartextinput" id="searchbartextinput" placeholder = "Boss Name"><input type="submit" value="search" class="searchbutton">
-      </form>
+        <form id="searchBossName">
+            <input type="form-control" class="searchbartextinput" id="searchbartextinput" placeholder="Boss Name [a-zA-Z]"  pattern="[a-zA-Z\s]+"><input type="submit" value="search" class="searchbutton">
+        </form>
 
-  </div>
+    </div>
 
 
     <div class="panel panel-default">
