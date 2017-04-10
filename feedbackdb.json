@@ -1,18 +1,12 @@
 {
   "feedbackData": [
     {
-      "bossName": "Akshay Pawar",
-      "bossDepartment": "CS",
-      "bossidName": "ap",
-      "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
-      "rating": "9",
-      "id": "BJDRO7vhx"
-    },
-    {
       "bossName": "Tayseer Edouni",
       "bossDepartment": "CS",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "8",
+      "upvotes": "4",
+      "downvotes": "5",
       "id": "BkhZsNPhl"
     },
     {
@@ -20,6 +14,8 @@
       "bossDepartment": "Math",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "7",
+      "upvotes": "8",
+      "downvotes": "4",
       "id": "Hk2BI81ae"
     },
     {
@@ -27,6 +23,8 @@
       "bossDepartment": "Economics",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "1",
+      "upvotes": "6",
+      "downvotes": "4",
       "id": "B1VUw8Jpl"
     },
     {
@@ -34,6 +32,8 @@
       "bossDepartment": "HR",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "2",
+      "upvotes": "5",
+      "downvotes": "4",
       "id": "B1VqvL16g"
     },
     {
@@ -41,6 +41,8 @@
       "bossDepartment": "Spiderman",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "2",
+      "upvotes": "5",
+      "downvotes": "4",
       "id": "H14LHweal"
     },
     {
@@ -48,6 +50,8 @@
       "bossDepartment": "Odin",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "8",
+      "upvotes": "3",
+      "downvotes": "4",
       "id": "r1IDr_eal"
     },
     {
@@ -55,28 +59,54 @@
       "bossDepartment": "Spiderweb",
       "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
       "rating": "8",
+      "upvotes": "25",
+      "downvotes": "4",
       "id": "H1bTIOx6x"
     },
     {
-      "bossName": "Wolverine",
-      "bossDepartment": "Earth",
-      "bossFeedback": "demo feedback",
-      "rating": "2",
-      "id": "ByNDoYl6e"
+      "bossName": "Test Name",
+      "bossDepartment": "Software",
+      "bossFeedback": "Cool Boss",
+      "rating": "3",
+      "upvotes": "18",
+      "downvotes": "4",
+      "id": "HyI23_xae"
+    },
+    {
+      "bossName": "Akshay Pawar",
+      "bossDepartment": "CS",
+      "bossFeedback": "To get a feel for what this looks like in practice, I juxtapose two feedback conversations that occurred following a workplace conflict. MJ Paulitz, a physical therapist in the Pacific Northwest, was treating a hospital patient one day when a fellow staff member paged her. Following procedure, she excused herself and stepped out of the treatment room to respond to the page. The colleague who sent it didn’t answer her phone when MJ called, nor had she left a message describing the situation that warranted the page. This happened two more times during the same treatment session.",
+      "rating": "10",
+      "upvotes": "18",
+      "downvotes": "5",
+      "id": "rksABa8ag"
+    },
+    {
+      "bossName": "Cal state Fullerton",
+      "bossDepartment": "Fullerton",
+      "bossFeedback": "Good University",
+      "rating": "8",
+      "upvotes": "2",
+      "downvotes": "2",
+      "id": "B1VP_I_Tl"
     },
     {
       "bossName": "Tayseer Edouni",
       "bossDepartment": "CS",
       "bossFeedback": "Cool Boss",
       "rating": "10",
-      "id": "BksQhHOTe"
+      "upvotes": "5",
+      "downvotes": "3",
+      "id": "rkw528dpe"
     },
     {
-      "bossName": "Tron Jones",
+      "bossName": "Rick James",
       "bossDepartment": "HR",
-      "bossFeedback": "Not bad",
-      "rating": "8",
-      "id": "B1xnGIdpx"
+      "bossFeedback": "Horrible",
+      "rating": "1",
+      "upvotes": "2",
+      "downvotes": "2",
+      "id": "r1q028upx"
     }
   ]
 }
