@@ -12,22 +12,47 @@
         $.post(this.serverUrl, val, function(serverResponse) {});
     };
 
-    DataStore.prototype.get = function(key, cb) {
-        $.get(this.serverUrl + '/' + key, function(serverResponse) {
-            console.log(serverResponse);
+    DataStore.prototype.getFeedback = function(key, cb) {
+        $.get(this.serverUrl + '/?bossName=' + key, function(serverResponse) {
+            //console.log(serverResponse);
             cb(serverResponse);
+            $("#comments").empty();
+            var length = serverResponse.length;
+            var filteredFeedback;
+            for (var i = 0; i < length; ++i) {
+                filteredFeedback = serverResponse[i];
+                $("#comments").prepend("<div class='bg-success feedbackdata'><h3>Boss Name: <i><b>" + filteredFeedback.bossName + "</b></i></h3><h4>Rating :<i><b>" + filteredFeedback.rating + "</b></i></h4><h4>Department: <i><b>" + filteredFeedback.bossDepartment + "</b></i></h4><p><i><b>" + filteredFeedback.bossFeedback + "</b></i></p></div>");
+
+            }
+
+            console.log(filteredFeedback);
+
+
+
+
+
         });
     };
+
+    DataStore.prototype.get = function(key, cb) {
+        $.ajax({
+            url: this.serverUrl + '/' + key,
+            type: 'GET',
+            async: false,
+            success: function(response) {
+                cb(response);
+            }
+        });
+    };
+
     DataStore.prototype.getAll = function(callback) {
         $.get(this.serverUrl, function(serverResponse) {
             callback(serverResponse);
         });
     };
 
-    RemoteDataStore.prototype.remove = function(key) {
-        $.ajax(this.serverUrl + '/' + key, {
-            type: 'DELETE'
-        });
+    DataStore.prototype.remove = function(key) {
+        delete this.data[key];
     };
 
     App.DataStore = DataStore;
