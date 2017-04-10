@@ -1,168 +1,170 @@
-*
+$card-width: 75%
+$card-bg: #fff
+$name: "Maven Pro"
+$department: "Roboto Slab"
+$text: "Roboto"
+$other-font: "Montserrat"
+
+html
   box-sizing: border-box
 
-body
-  background: #FAFAFA
-  font-family: "Roboto"
-  height: 100vh
+*, :before, :after
+  box-sizing: inherit
 
-  .row
-    display: flex
+.cards
+  position: relative
+  top: 3.75em
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+  -webkit-box-orient: vertical
+  -moz-box-orient: vertical
+  -ms-box-orient: vertical
+
+  -webkit-box-direction: normal
+  -moz-box-direction: normal
+  -ms-box-direction: normal
+
+  -ms-flex-direction: column
+  flex-direction: column
+
+@media (min-width: 37.5em)
+  .cards
+    -webkit-box-orient: horizontal
+    -moz-box-orient: horizontal
+    -ms-box-orient: horizontal
+
+    -webkit-box-direction: normal
+    -moz-box-direction: normal
+    -ms-box-direction: normal
+
+    -ms-flex-direction: row
     flex-direction: row
 
-a
-  text-decoration: none
+    -webkit-box-pack: justify
+    -moz-box-pack: justify
+    -ms-box-pack: justify
+
+    -ms-flex-pack: justify
+    justify-content: center
+
 
 .card
-  padding: 5px
-  width: 300px
+  width: 100%
+  margin: 0.75em
+  background: $card-bg
   position: relative
-  top: 60px
-  left: 25px
+  overflow: hidden
+  box-shadow: 2px 3px 4px #757575
 
-  .menu
-    padding: 0
+  .inner-wrap
+    padding: 1.5em
+    p:last-of-type
+      margin-bottom: 0
+  h3
     margin: 0
-    list-style-type: none
-
-    &::after, &::before
-      content: ""
-      display: table
-
-    &::after
-      clear: both
-
-    li
-      display: inline-block
-
+    padding-bottom: 0.3em
+    font-size: 1.75em
+    font-family: $name
     a
-      color: white
-
-    span
-      position: absolute
-      left: 50%
-      top: 0
-      font-size: 10px
-      font-weight: 700
-      transform: translate(-50%, 0)
-
-  .wrapper
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1%, transparent 55%, black), url("http://www.pixelstalk.net/wp-content/uploads/2016/06/Daredevil-Netflix-Movie-High-Definition-Wallpapers-1080p.jpg") (center / cover) no-repeat
-    min-height: 300px
-    position: relative
-    overflow: hidden
-    box-shadow: 0 0 0 #757575, 0 0 0 #616161
-    top: 0
-    transition: all 0.3s
-
-    &:hover
-      .menu span
-        transform: translate(-50%, -10px)
-        opacity: 1
-
-      .data, .data-section
-        transform: translateY(0)
-
-  .data-section
-    position: absolute
-    bottom: 0.5em
-    width: 100%
-    transform: translateY(calc(30px + 1em))
-    transition: 0.4s
-    .content-padding: 1em
-    .content-position: relative
-    .content-z-index: 1
-
-  .side-caption
-    background: #F0141E
+      color: #000
+      &:hover
+        color: #000
+  .title
+    line-height: 1.5
+    font-size: 1.2em
     display: block
-    padding: 0.5em
-    width: 11em
-    padding-left: 1em
-    font-size: 0.7em
-    color: white
-
-  .heading
-    padding-left: 0.2em
-    font-size: 2em
-    margin-top: 8px
-
-  .data
-    height: 40px
-    margin: 0.5em
-
-  .top
-    color: white
-    padding: 1em
-
-    .day
-      float: left
-      font-size: 0.8em
-      shadow: 1px 2px 4px #427388
-
-  .menu
-    float: right
-
-    li
-      margin: 0 5px
-      position: relative
-
-    span
-      transition: all 0.3s
-      opacity: 0
-
-  .data
-    color: white
-    transform: translateY(calc(70px + 4em))
-
-  .heading a
-    font-family: "Roboto Slab"
-    color: white
-
-    &:hover
-      text-decoration: none
-
-  .button
-    display: block
-    width: 75px
-    margin: 1.5em auto 1em
-    text-align: center
-    font-size: 12px
-    color: white
-    line-height: 1
-    position: relative
-    font-weight: 700
-    transition: all 0.3s
-
-    &::after
-      font-family: FontAwesome
-      content: "\f0da"
-      font-weight: normal
-      opacity: 0
-      position: absolute
-      right: 0
-      top: 50%
-      transform: translate(0, -50%)
-      transition: all 0.3s
-
-    &:hover
-      &.button
-        letter-spacing: 1px
-
-      &::after
-        transform: translate(0.6em, -50%)
-        opacity: 1
-
-    &:active.button
-      transform: scale(0.9)
-
-.description
-  padding: 1em
-  color: black
-  position: absolute
-  top: 40%
-  left: 50%
-
+    font-family: $department
+  p
+    margin-top: 0.75em
+    font-size: 1.2em
+    color: #424242
+    line-height: 1.5
+    font-family: $text
+    text-align: justify
   a
-    font-size: 2em
-    color: #0177B5
+    color: #f44242
+    text-decoration: none
+    &:hover, &:focus
+      color: darken(#f44242, 15%)
+      text-decoration: none
+      transition: all 0.3s
+  .likes-bar
+    border: solid 1px black
+    padding: 0 1.5em
+    border-width: 1px 0 1px 0
+    font-size: 90%
+    p
+      color: black
+      letter-spacing: 2px
+      a:first-of-type
+        color: #333
+        font-weight: bold
+  .action-bar
+    ul
+      margin: 0
+      padding: 0
+      width: 100%
+      position: relative
+      overflow: hidden
+    li
+      list-style: none
+      float: left
+      text-align: center
+      font-size: 1.1em
+      a
+        display: block
+        padding: 1em 0
+        color: #616161
+        &:hover, &:focus
+          color: #000
+          text-decoration: none
+      &.comments
+        width: 50%
+        text-align: left
+        padding: 0 1.5em
+        border: solid black
+        border-width: 0 1px 0 0
+        .comments-link
+          font-family: $other-font
+          font-size: 0.8em
+          font-weight: bold
+      &.share, &.like
+        width: 25%
+      &.share
+        border: solid black
+        border-width: 0 1px 0 0
+    span:not(.comments-link)
+      font-family: $other-font
+      font-size: 0.8em
+      height: 1px
+      width: 1px
+      padding: 0.3em
+      border: 0
+
+@media (min-width: 37.5em)
+  .card
+    width: $card-width
+
+@media (min-width: 70.5em)
+  .card
+    width: $card-width
+
+@media(max-width: 1024px)
+  .cards
+    justify-content: center
+  .card
+    width: 98%
+
+@media(max-width: 414px)
+  .cards
+    justify-content: center
+  .card
+    width: 94%
+
+@media(max-width: 414px)
+  .cards
+    justify-content: center
