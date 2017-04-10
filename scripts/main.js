@@ -17,4 +17,19 @@
     bossList.getAllComments(DataStore);
     var UpVotesHandler = App.UpVotesHandler;
     var upVotes = new UpVotesHandler(DataStore);
+
+    //http://stackoverflow.com/questions/8874960/getting-input-values-from-text-box
+    var a = document.getElementById('searchBossName');
+    a.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var b = document.getElementById('searchbartextinput').value;
+        if (b === '') {
+            location.reload();
+        } else {
+            var remoteDS = new App.DataStore("http://localhost:3002/feedbackData");
+            remoteDS.getFeedback(b, function() {});
+        }
+
+
+    });
 })(window);

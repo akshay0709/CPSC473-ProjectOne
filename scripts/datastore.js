@@ -23,8 +23,6 @@
                 filteredFeedback = serverResponse[i];
                 $('#comments').prepend("<div class='bg-success feedbackdata'><h3>Boss Name: <i><b>" + filteredFeedback.bossName + "</b></i></h3><h4>Rating :<i><b>" + filteredFeedback.rating + "</b></i></h4><h4>Department: <i><b>" + filteredFeedback.bossDepartment + "</b></i></h4><p><i><b>" + filteredFeedback.bossFeedback + "</b></i></p><span class='clickableThumbsUp' name='clickableUp' id='" + filteredFeedback.id + "'><i class='fa fa-thumbs-up' aria-hidden='true'>" + filteredFeedback.upvotes + "</i></span>                                                            <span class='clickableThumbsDown' name='clickableDown' id='" + filteredFeedback.id + "'><i class='fa fa-thumbs-down' aria-hidden='true'>" + filteredFeedback.downvotes + "</i></span></div>");
             }
-
-
         });
     };
 

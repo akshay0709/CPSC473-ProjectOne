@@ -19,6 +19,8 @@
     <header>
         <h1 class="appname">GOSSIPMONGER</h1>
         <h4> - Snark about your Boss</h4>
+
+
     </header>
     <section>
         <!-- The Form box goes here -->
@@ -55,13 +57,17 @@
 
     </section>
 
+    <div class="form-group">
+      <form id="searchBossName" >
+          <input type="form-control" class="searchbartextinput" id="searchbartextinput" placeholder = "Boss Name"><input type="submit" value="search" class="searchbutton">
+      </form>
+
+  </div>
+
+
     <div class="panel panel-default">
         <section data-boss-feedback="comments" id="comments" class="comments">
-            <!-- <div>
-            <h5>Boss Name - Boss Department - Rating : 8</h5>
-            Feedback
-        </div> -->
-            <!-- Submitted information goes here for user to view -->
+
         </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
