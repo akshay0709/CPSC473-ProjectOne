@@ -1,0 +1,56 @@
+/*
+ * Footer Styles
+ */
+
+.site-footer{
+	padding: 50px 0;
+
+	.newsletter{
+		padding: 20px;
+		background-color: #1d191a;
+		@include clearfix;
+
+		label,.control{
+			width: 50%;
+			float: left;
+		}
+		label{
+			@include em(24);
+			font-weight: 300;
+			margin-top: 5px;
+		}
+		.control{
+			position: relative;
+
+			input{
+				padding-right: 40px;
+				width: 100%;
+				color: white;
+
+				&:hover,&:focus,
+				&:hover+button,&:focus+button{
+					border-color: $accent-color;
+				}
+			}	
+			button{
+				background: #221f1f;
+				border: 2px solid #3b3738;
+				position: absolute;
+				right:0;
+				top:0;
+				outline: none;
+
+				&:hover,&:focus{
+					border-color: $accent-color;
+				}
+			}
+		}
+	}
+	.colophon{
+		padding-top: 50px;
+		@include em(12);
+		text-align: center;
+		color: #524d4e;
+
+	}
+}

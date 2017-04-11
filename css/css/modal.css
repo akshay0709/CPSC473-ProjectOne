@@ -1,6 +1,6 @@
 .overlays {
-  position: absolute;
-  background: rgba(248, 217, 2, 0.9);
+  position: fixed;
+  background: rgba(248, 217, 2, 0.75);
   top: 50px;
   left: 0;
   right: 0;

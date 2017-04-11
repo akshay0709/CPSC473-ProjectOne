@@ -1,0 +1,18 @@
+// Font family
+$primary-font      : "Open Sans", arial, sans-serif;
+
+
+// Color Variables
+$accent-color      : #f5ca6b;
+$primary-color     : $accent-color;
+$secondary-color   : #231f20;
+
+$strong-color      : #5b5952;
+$body-color        : #868278;
+
+$dark-color: #868278;
+$dark-muted-color: #524d4e;
+
+// Grid system
+$grid-columns      : 12 !default;
+$grid-gutter-width : 30px !default;
