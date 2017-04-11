@@ -18,7 +18,7 @@
         DataStore.getAll(function(s) {
             allComments = s;
             allComments.forEach(function(item) {
-                $('#comments').prepend("<div class='bg-success feedbackdata'><h3>Boss Name: <i><b>" + item.bossName + "</b></i></h3><h4>Rating :<i><b>" + item.rating + "</b></i></h4><h4>Department: <i><b>" + item.bossDepartment + "</b></i></h4><p><i><b>" + item.bossFeedback + "</b></i></p><span class='clickableThumbsUp' name='clickableUp' id='" + item.id + "'><i class='fa fa-thumbs-up' aria-hidden='true'>" + item.upvotes + "</i></span>                                                            <span class='clickableThumbsDown' name='clickableDown' id='" + item.id + "'><i class='fa fa-thumbs-down' aria-hidden='true'>" + item.downvotes + "</i></span></div>");
+                $('#comments').prepend("<div class='card'><div class='inner-wrap'><h3>" + item.bossName + "</h3><a class='title' href='#'>" + item.bossDepartment + "</a><p>" + item.bossFeedback + "</p></div><div class='likes-bar'><p>Rating: <a href='#'>" + item.rating + "</a></p></div><div class='action-bar'><ul><li class='comments'><a href='#'><span class='comments-link'></span></a></li><li class='share'><a href='#' class='clickableThumbsUp' name='clickableUp' id=" + item.id + "><i class='ion ion-thumbsup'></i><span>" + item.upvotes + "</span></a></li><li class='like'><a href='#' class='clickableThumbsDown' name='clickableDown' id=" + item.id + "><i class='ion ion-thumbsdown'></i><span>" + item.downvotes + "</span></a></li></ul></div></div>");
             });
         });
     };

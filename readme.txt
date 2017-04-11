@@ -1,50 +1,1 @@
-Workers can anonymously snark about their bosses
-TODO:
--Implement comments for Feedback cards
--Implement Search Functionality
--Implement About page
--Implement Contact page
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-CPSC 473 - Web Front-End Engineering for Internet Applications
-Project 1 - Spring 2017
-Section 2
-Demos April 3
-Source code and documentation due April 10
-Section 1
-Demos April 5
-Source code and documentation due April 12
-Use client-side JavaScript, AJAX, and Horizon  to build one of the applications listed below.  You may use any available third-party Web Service APIs, libraries, or modules, provided that you comply with the terms of their licenses.
-Projects
-
-
-
-Functionality
-Note that project descriptions are very brief and deliberately underspecified.  This is your chance for creativity.  Begin with a set of possible features, plan according to the available time, and build something interesting.  Think of the project not as a finished application, but as a proof-of-concept, prototype, or Minimum Viable Product.
-Working with other teams
-You may discuss your project and the technologies you are using with other teams, but each team must build its own application and submit its own work.
-Working with members of your team
-In general, each student in a group will receive the same grade.  If you run into issues with your teammates, it is your responsibility to attempt to resolve them.
-If you are unable to work with a member of your team (for example, if they disappear and fail to respond to attempts to contact them), bring the problem to my attention as soon as possible -- do not wait until the due date.
-Presentations
-On presentation day, give a short demonstration of your application to the class.  Include both functionality and implementation details.  Your entire team must be present and available to answer questions, but you may designate individual team members to deliver the presentation.
-Grading
-Each of the following factors contributes up to 3 points to the final grade for the project:
-Quality of the presentation
-Completeness of the presentation
-Quality of documentation for installation and configuration
-Quality of documentation for users
-Project functionality
-Project scope
-Code quality
-Code maintainability
-Appropriate use of available technologies
-Innovation
-Web design
-Teamwork
+BossRaterTeam 6Sri Maruti Ram Kumar AvantsaTayseer Edouni,Jeremy Mann,Akshay Pawar,Pragya Tak1.0	Project ScopeBossRater is an application built for employees so that they may leave constructive feedback for their bosses (rating and feedback). BossRater is meant to be used within a company’s private network (not available for world wide web). There is no account creation (bosses cannot determine which employee wrote which feedback). Users can search for bosses by searching for their name in the search bar (this will filter all the feedback and display only the feedback with matching names). Employees may either like or dislike a rating by giving a thumbs up or a thumbs down. 2.0	Tools/Software UsedBossRater uses the json-server tool (creates a local json server for simple data POST/GET requests). BossRater does not use any other backend platform (mainly due to the lack of account creation). BossRater uses Twitter’s Bootstrap (getbootstrap.com) for basic CSS formatting. Ionicons (http://ionicons.com/) was used for icons within the web application. Fontawesome (http://fontawesome.io/) was used to import custom fonts within the web application. 3.0 Installation & Configuration Documentation1.This project requires the usage of a json server.To install the json-server tool, enter the following command in command line/terminal"npm install -g json-server" or if using OSX or UNIX "sudo npm install -g json-server"2. Open Atom (or another text editor)   Save file as "feedbackdb.json" and in the main project directory   Enter the following text and then save and close the file:   {     "feedbackData": [       {         "bossName": "Test Name",         "bossDepartment": "Test Department",         "bossFeedback": "TestFeedback",         "rating": "10",         "upvotes": "0",         "downvotes": "0",         "id": "BkhZsNPhl"       }     ]   }3. When in the main directory of the project (where feedbackdb.json is located).   Enter the following into the command line /terminal:   "json-server --port=3002 --watch feedbackdb.json"4. The final step is to install and run browser-sync.   In order to install browser-sync, open the command line / terminal and enter   the follwing command:   "npm install -g browser-sync"   or if using OSX or UNIX   "sudo npm install -g browser-sync"While within the project’s main directory, enter the following command in command line / terminal:browser-sync start --server -- files "stylesheets/*.css, scripts/*.js, *.html"It will launch the website locally. Make sure that this is done after the json server is already running.4.0 User Documentation1.	Main page When the user first loads the webpage they will see the below screenshot. Here they will have the option to scroll through all available ratings and to like or dislike a rating (by clicking on thumbs up or thumbs down).2.	Searching/Filter for BossFor a user to search for a specific boss, they will need to click on the search bar (near the header of the page). They will need to enter the name of their boss (capitalization and spelling need to be correct). The webpage will then display only the ratings with that specified boss name. 3.	Posting a Rating/ReviewFor a user to submit a rating/review of their boss, they need to first click on “Rate My Boss”, which is next to the search field. The feedback field will then pop up with a yellow background.When the user has submitted their review/rating, the page will reload with their review/rating at the top of the list.
